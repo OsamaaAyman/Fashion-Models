@@ -57,13 +57,13 @@ tl.from('.left-side div', {
     stagger: {
         amount: .4
     },
-    delay:.3
-}).from('.right-side',{
+    delay: .3
+}).from('.right-side', {
     // y:150,
-    opacity:0,
-    duration:.5
-}).to('.wrapper',{
-    x:-window.innerWidth
+    opacity: 0,
+    duration: .5
+}).to('.wrapper', {
+    x: -window.innerWidth
 })
 ScrollTrigger.create({
     animation: tl,
@@ -82,17 +82,15 @@ gsap.to('.txt-bottom', {
         start: 2
     }
 })
-tl.from('.columns div img',{
-    opacity:0,
-    duration:2,
-    y:150,
-    stagger:.4,
-    scrollTrigger:{
-        trigger:'.columns',
-        start:"top 40%",
-        // end:"top 70%",
-        scrub:10,
-        // markers:1
+tl.from('.columns div img', {
+    opacity: 0,
+    duration: 2,
+    y: 150,
+    stagger: .4,
+    scrollTrigger: {
+        trigger: '.columns',
+        start: "top 40%",
+        scrub: 3,
     }
 })
 
